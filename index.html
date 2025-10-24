@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <!--prueba-->
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light navegacion">
     <div class="container-fluid">
@@ -37,30 +36,24 @@
   <!-- CARRUSEL -->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/baneruno.PNG" class="d-block w-100" alt="Banner 1">
-      </div>
-      <div class="carousel-item">
-        <img src="img/banerdos.PNG" class="d-block w-100" alt="Banner 2">
-      </div>
-      <div class="carousel-item">
-        <img src="img/banertres.PNG" class="d-block w-100" alt="Banner 3">
-      </div>
+      <div class="carousel-item active"><img src="img/baneruno.PNG" class="d-block w-100" alt="Banner 1"></div>
+      <div class="carousel-item"><img src="img/banerdos.PNG" class="d-block w-100" alt="Banner 2"></div>
+      <div class="carousel-item"><img src="img/banertres.PNG" class="d-block w-100" alt="Banner 3"></div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon"></span>
       <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="carousel-control-next-icon"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
 
   <!-- SECCIÓN PROYECTO -->
-  <div class="container proyecto" id="proyecto">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
+  <div class="proyecto container-fluid" id="proyecto">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 col-xl-5 mb-4 mb-lg-0">
         <h1>Nuestro Proyecto</h1>
         <p>
           Más allá de la contaminación del aire y el agua, existe un enemigo presente en nuestro día 
@@ -68,23 +61,20 @@
           afectan seriamente a nuestra salud y bienestar, razón por la cual decidimos abordar esta problemática tan infravalorada.
         </p>
       </div>
-      <div class="col-lg-6">
-        <iframe 
-          src="https://www.youtube.com/embed/R5NsFVaiUC0?si=AngS8ZL4uzB6xBiL" 
-          title="Video sobre contaminación sonora" 
-          allowfullscreen>
-        </iframe>
+      <div class="col-lg-6 col-xl-5 text-center">
+        <iframe src="https://www.youtube.com/embed/R5NsFVaiUC0?si=AngS8ZL4uzB6xBiL" 
+          title="Video sobre contaminación sonora" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 
   <!-- SECCIÓN OBJETIVOS -->
-  <div class="container objetivo" id="objetivos">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+  <div class="objetivo container-fluid" id="objetivos">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 col-xl-5 mb-4 mb-lg-0 text-center">
         <img src="img/20251006_101844 (1).jpg" class="img-fluid rounded" alt="Nuestro Objetivo">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 col-xl-5">
         <h1>Nuestro Objetivo</h1>
         <p>
           Nuestro proyecto busca investigar las fuentes, niveles e impacto de la contaminación sonora. 
@@ -99,9 +89,9 @@
   </div>
 
   <!-- SECCIÓN APP -->
-  <div class="container app" id="app">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
+  <div class="app container-fluid" id="app">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-6 col-xl-5 mb-4 mb-lg-0">
         <h1>App "RIIING!" para tu celular</h1>
         <p>
           Ante las consecuencias de aturdimiento que provoca el timbre, se creó una aplicación 
@@ -115,12 +105,10 @@
           de mantener un ambiente escolar adecuado. 
         </p>
         <div class="btn">
-          <a href="https://drive.google.com/drive/folders/17BvZYBElS0-ni65hemNTc2Dh2_WpkdMN?usp=drive_link">
-            DESCARGAR
-          </a>
+          <a href="https://drive.google.com/drive/folders/17BvZYBElS0-ni65hemNTc2Dh2_WpkdMN?usp=drive_link">DESCARGAR</a>
         </div>
       </div>
-      <div class="col-lg-6 text-center">
+      <div class="col-lg-6 col-xl-5 text-center">
         <img src="img/LogoApp.png" class="img-fluid" alt="Logo App RIIING!">
       </div>
     </div>
@@ -128,22 +116,19 @@
 
   <!-- FOOTER -->
   <footer id="contacto">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center mb-4">Contacto</h2>
+    <div class="container-fluid">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <div class="row justify-content-center">
         <div class="col-md-6 mb-3">
           <ul>
-            <li>📞 +54 297 1223-123</li>
             <li>📧 contaminacionsonora7@gmail.com</li>
             <li>📍 Escuela N°746 Bellas Artes</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <iframe 
-            class="mapa"
+        <div class="col-md-6 text-center">
+          <iframe class="mapa" 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.5113688381911!2d-67.48865314737954!3d-45.86953150115603"
-            allowfullscreen 
-            loading="lazy">
+            allowfullscreen loading="lazy">
           </iframe>
         </div>
       </div>
@@ -156,10 +141,3 @@
   <script src="bs/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
