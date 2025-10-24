@@ -1,71 +1,144 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden; /* Evita scroll lateral */
 }
-.navegacion{
-    background-color: #c82630;
+
+/* NAVBAR */
+.navegacion {
+  background-color: #c82630;
 }
-.titulo{
-    font-size: medium;
-    color: white !important;
+
+.titulo {
+  font-size: medium;
+  color: white !important;
 }
-.boton{
-    width: 140px;
-    height: 40px;
-    background-color: rgb(160, 30, 30);
-    color: white !important;
-    float: left;
-    margin-left: 4%;
-    border-radius: 1vw;
-    font-size: 2.5vh;
-    -webkit-box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.463); 
-    box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.319);
+
+/* Botones del menú */
+.boton {
+  width: auto; /* en vez de 140px */
+  min-width: 120px;
+  height: auto;
+  padding: 8px 10px;
+  background-color: rgb(160, 30, 30);
+  color: white !important;
+  margin: 5px;
+  border-radius: 1vw;
+  font-size: 2.3vh;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.319);
+  text-align: center;
 }
-.boton:hover{
-    background-color: #fb4f4d;
+.boton:hover {
+  background-color: #fb4f4d;
 }
-.proyecto{
-    background-color: #c82630;
-    color: white;
-    padding: 2%;
+
+/* SECCIONES */
+.proyecto {
+  background-color: #c82630;
+  color: white;
+  padding: 2% 5%;
 }
-.objetivo{
-    background-color: #9b1c24;
-    color: white;
-    padding: 2%;
+.objetivo {
+  background-color: #9b1c24;
+  color: white;
+  padding: 2% 5%;
 }
-.app{
-    background-color: #c82630;
-    color: white;
-    padding: 2%;
+.app {
+  background-color: #c82630;
+  color: white;
+  padding: 2% 5%;
 }
-.btn a{
-     text-decoration: none;    
-    color: white !important;
+
+/* BOTÓN DESCARGAR */
+.btn a {
+  text-decoration: none;
+  color: white !important;
 }
-.btn{
-    width: 140px;
-    height: 40px;
-    border-radius: 2vw;
-     margin: 10px auto;
-     align-items: center;
-    justify-content: center;
-    background: -moz-linear-gradient(izquierda, #2e77a1 0%, #1C6EA4 37%, #191382 100%);
-    background: -webkit-linear-gradient(izquierda, #2e77a1 0%, #1C6EA4 37%, #191382 100%);
-    background: linear-gradient(to right, #2e77a1 0%, #1C6EA4 37%, #191382 100%);
-    color: white;
+.btn {
+  width: fit-content;
+  min-width: 140px;
+  height: auto;
+  border-radius: 2vw;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #2e77a1 0%, #1C6EA4 37%, #191382 100%);
+  color: white;
 }
-footer{
-    background-color: #87171f;
-    color: white;
+
+/* FOOTER */
+footer {
+  background-color: #87171f;
+  color: white;
+  padding: 20px;
 }
-footer ul li{
-     list-style: none;
+footer ul li {
+  list-style: none;
 }
-.mapa{
-    margin-top: 5px;
-    margin-right: 10px;
+.mapa {
+  margin-top: 5px;
+  width: 100% !important;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
 }
 .footer-bottom {
   background-color: #a61f27;
+  text-align: center;
+  padding: 10px 0;
 }
+
+/* --- Ajustes generales --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Iframes (YouTube, mapas) */
+iframe {
+  max-width: 100%;
+  width: 100% !important;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* --- Responsive: pantallas pequeñas --- */
+@media (max-width: 768px) {
+  .navbar-brand br {
+    display: none;
+  }
+
+  .titulo {
+    font-size: small;
+  }
+
+  .boton {
+    font-size: 2vh;
+    margin: 3px auto;
+  }
+
+  iframe {
+    aspect-ratio: 16 / 9;
+  }
+
+  .proyecto, .objetivo, .app {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
 
