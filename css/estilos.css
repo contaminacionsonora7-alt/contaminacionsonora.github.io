@@ -2,27 +2,19 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
   max-width: 100%;
   overflow-x: hidden;
-  margin: 0;
 }
 
 /* --- NAVBAR --- */
-.navegacion {
-  background-color: #c82630;
-}
-
-.titulo {
-  font-size: medium;
-  color: white !important;
-}
-
+.navegacion { background-color: #c82630; }
+.titulo { font-size: medium; color: white !important; }
 .boton {
   width: auto;
   min-width: 120px;
-  height: auto;
   padding: 8px 10px;
-  background-color: rgb(160, 30, 30);
+  background-color: rgb(160,30,30);
   color: white !important;
   margin: 5px;
   border-radius: 1vw;
@@ -30,25 +22,63 @@ body {
   text-align: center;
   box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.32);
 }
-.boton:hover {
-  background-color: #fb4f4d;
-}
+.boton:hover { background-color: #fb4f4d; }
 
 /* --- SECCIONES --- */
 .proyecto, .objetivo, .app {
   color: white;
-  padding: 40px 5%;
+  padding: 60px 5%;
 }
-
 .proyecto { background-color: #c82630; }
 .objetivo { background-color: #9b1c24; }
 .app { background-color: #c82630; }
 
-/* --- IMÁGENES Y IFRAME --- */
-img.img-fluid {
-  max-width: 100%;
+/* --- VIDEO --- */
+.video-proyecto {
+  width: 100%;
+  max-width: 800px;
   height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- IMÁGENES APP --- */
+.app-logo { max-width: 250px; }
+.qr-code { max-width: 200px; }
+
+/* Responsive logo + QR */
+@media (max-width: 992px) {
+  .app-logo { max-width: 200px; }
+  .qr-code { max-width: 150px; }
+  .d-flex.flex-lg-row { flex-direction: column !important; }
+}
+
+/* --- BOTÓN DESCARGAR --- */
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  border-radius: 2vw;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #2e77a1 0%, #1C6EA4 37%, #191382 100%);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+.btn a { text-decoration: none; color: white !important; }
+
+/* --- FOOTER --- */
+footer { background-color: #87171f; color: white; }
+.footer-bottom { background-color: #a61f27; }
+
+/* --- CONTACTO --- */
+.contacto ul li { list-style: none; margin-bottom: 10px; }
+.mapa { width: 100%; max-width: 100%; height: 250px; border:0; }
+
  
+
 
 
 
