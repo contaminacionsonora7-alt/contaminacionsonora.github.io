@@ -74,13 +74,41 @@ footer { background-color: #87171f; color: white; }
 .footer-bottom { background-color: #a61f27; }
 
 /* --- CONTACTO --- */
-.contacto ul li { 
-  backgrond-color: #87171f !important; 
-   color: white;
-  list-style: none; margin-bottom: 10px; }
-.mapa { width: 100%; max-width: 100%; height: 250px; border:0; }
+.contacto {
+  background-color: #c82630; /* fondo rojo igual que las demás secciones */
+  color: white;
+  padding: 60px 5%;
+}
+
+.contacto-lista li {
+  color: white;
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* --- MAPA RESPONSIVO --- */
+.mapa-contenedor {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.mapa-contenedor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
  
+
 
 
 
